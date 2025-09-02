@@ -8,21 +8,10 @@
       }
     ]
   },
-  "Python": {
-    "Version": "3.7.12",
-    "Type": "conda",
-    "Name": "./renv/python/condaenvs/renv-python"
-  },
   "Packages": {
     "Andromeda": {
       "Package": "Andromeda",
       "Version": "0.6.7",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "BH": {
-      "Package": "BH",
-      "Version": "1.84.0-0",
       "Source": "Repository",
       "Repository": "CRAN"
     },
