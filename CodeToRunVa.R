@@ -6,6 +6,20 @@ Sys.setenv("VROOM_THREADS"=1) # Sets the number of threads to 1 to avoid deadloc
 Sys.setenv(JAVA_HOME="extras/jdk1.8.0_202") # "d:/jdk1.8"
 Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="extras") # "d:/JDBC/installed_12.4"
 
+connectionDetails <- DatabaseConnector::createConnectionDetails(
+  dbms = "sql server",
+  server = "vhacdwdwhdbs102"
+)
+
+# Name ORD table names to OMOP standards; we have to ask Bill for help here
+# VaTools::createResearchCdmSchema(
+#   connectionDetails = connectionDetails,
+#   sourceDatabase = ???,
+#   sourceSchema = ???,
+#   targetDatabase = ???,
+#   targetSchema = ???,
+#   cohortSchema = ???)
+
 databaseName <- "VA-OMOP"
 workDatabaseSchema <- 'VINCI_OMOP.scratch_msuchard'
 cdmDatabaseSchema <- 'CDW_OMOP.OMOPV5'
@@ -13,10 +27,7 @@ outputLocation <- 'D:/OHDSI/MAS/output'
 minCellCount <- 10
 cohortTableName <- "sema_nvamd"
 
-connectionDetails <- DatabaseConnector::createConnectionDetails(
-  dbms = "sql server",
-  server = "vhacdwdwhdbs102"
-)
+
 
 ##=========== END OF INPUTS ==========
 analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
