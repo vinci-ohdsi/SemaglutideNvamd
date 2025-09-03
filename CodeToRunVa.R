@@ -11,23 +11,19 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(
   server = "vhacdwdwhdbs102"
 )
 
-# Name ORD table names to OMOP standards; we have to ask Bill for help here
-# VaTools::createResearchCdmSchema(
+# Only needs to be executed once
+# VaTools::createStandardCdmSchema(
 #   connectionDetails = connectionDetails,
-#   sourceDatabase = ???,
-#   sourceSchema = ???,
-#   targetDatabase = ???,
-#   targetSchema = ???,
-#   cohortSchema = ???)
+#   database = "ORD_Researcher_xyz",
+#   startingSchema = "src",
+#   destinationSchema = "OMOPV5")
 
 databaseName <- "VA-OMOP"
-workDatabaseSchema <- 'VINCI_OMOP.scratch_msuchard'
-cdmDatabaseSchema <- 'CDW_OMOP.OMOPV5'
-outputLocation <- 'D:/OHDSI/MAS/output'
+workDatabaseSchema <- "ORD_Researcher_xyz.scratch_msuchard" # VINCI_OMOP
+cdmDatabaseSchema <- "ORD_Researcher_xyz.OMOPV5" # CDW_OMOP
+outputLocation <- "D:/OHDSI/MAS/output"
 minCellCount <- 10
 cohortTableName <- "sema_nvamd"
-
-
 
 ##=========== END OF INPUTS ==========
 analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
