@@ -11,14 +11,11 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(
   server = "vhacdwdwhdbs102"
 )
 
-# Name ORD table names to OMOP standards; we have to ask Bill for help here
-# VaTools::createResearchCdmSchema(
+# Name ORD table names to OMOP standards (one time only) 
+# VaTools::createStandardCdmSchema(
 #   connectionDetails = connectionDetails,
-#   sourceDatabase = ???,
-#   sourceSchema = ???,
-#   targetDatabase = ???,
-#   targetSchema = ???,
-#   cohortSchema = ???)
+#   database = "ORD_xyz",
+#   startingSchema = "src") 
 
 databaseName <- "VA-OMOP"
 workDatabaseSchema <- 'VINCI_OMOP.scratch_msuchard'
