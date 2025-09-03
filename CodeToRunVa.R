@@ -3,7 +3,7 @@
 Sys.setenv("_JAVA_OPTIONS"="-Xmx4g") # Sets the Java maximum heap space to 4GB
 Sys.setenv("VROOM_THREADS"=1) # Sets the number of threads to 1 to avoid deadlocks on file system
 
-Sys.setenv(JAVA_HOME="extras/jdk1.8.0_202") # "d:/jdk1.8"
+Sys.setenv(JAVA_HOME="extras/jdk1.8") # "d:/jdk1.8"
 Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="extras") # "d:/JDBC/installed_12.4"
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(
