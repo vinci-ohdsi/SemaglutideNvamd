@@ -43,7 +43,7 @@ Author: Xavier Robin [cre, aut] (<https://orcid.org/0000-0002-6813-3200>),
   Matthias Doering [ctb] (Hand & Till Multiclass),
   Zane Billings [ctb] (DeLong paired test CI)
 Maintainer: Xavier Robin <pROC-cran@xavier.robin.name>
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-11-01 17:50:13 UTC
-Built: R 4.4.0; x86_64-w64-mingw32; 2025-07-03 05:56:01 UTC; windows
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-06-23 01:45:31 UTC; windows
 Archs: x64

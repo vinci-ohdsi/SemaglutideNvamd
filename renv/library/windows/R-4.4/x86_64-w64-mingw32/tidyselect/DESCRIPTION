@@ -30,6 +30,6 @@ Author: Lionel Henry [aut, cre],
   Hadley Wickham [aut],
   Posit Software, PBC [cph, fnd]
 Maintainer: Lionel Henry <lionel@posit.co>
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2024-03-11 14:10:02 UTC
-Built: R 4.4.0; ; 2024-04-25 20:19:04 UTC; windows
+Built: R 4.4.3; ; 2025-06-23 02:07:05 UTC; windows

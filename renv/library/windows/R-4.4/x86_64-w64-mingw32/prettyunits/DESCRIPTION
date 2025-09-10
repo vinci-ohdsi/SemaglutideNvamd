@@ -27,6 +27,6 @@ Author: Gabor Csardi [aut, cre],
   Bill Denney [ctb] (<https://orcid.org/0000-0002-5759-428X>),
   Christophe Regouby [ctb]
 Maintainer: Gabor Csardi <csardi.gabor@gmail.com>
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-09-24 21:10:02 UTC
-Built: R 4.4.0; ; 2024-04-25 19:51:35 UTC; windows
+Built: R 4.4.1; ; 2024-07-09 00:25:00 UTC; windows

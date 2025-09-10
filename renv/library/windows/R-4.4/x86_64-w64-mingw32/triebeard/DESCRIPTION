@@ -19,7 +19,7 @@ BugReports: https://github.com/Ironholds/triebeard/issues
 Date: 2023-03-04
 NeedsCompilation: yes
 Packaged: 2023-03-04 21:40:31 UTC; ironholds
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-03-04 23:30:07 UTC
-Built: R 4.4.0; x86_64-w64-mingw32; 2025-07-03 06:09:56 UTC; windows
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-06-23 01:22:47 UTC; windows
 Archs: x64

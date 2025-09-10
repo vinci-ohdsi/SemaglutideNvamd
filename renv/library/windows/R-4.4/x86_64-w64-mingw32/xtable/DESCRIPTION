@@ -40,7 +40,7 @@ Description: Coerce data to LaTeX and HTML tables.
 URL: http://xtable.r-forge.r-project.org/
 Depends: R (>= 2.10.0)
 License: GPL (>= 2)
-Repository: CRAN
+Repository: RSPM
 NeedsCompilation: no
 Packaged: 2019-04-21 10:56:51 UTC; dsco036
 Author: David B. Dahl [aut],
@@ -73,4 +73,5 @@ Author: David B. Dahl [aut],
   Sven Garbade [ctb],
   Uwe Ligges [ctb]
 Date/Publication: 2019-04-21 12:20:03 UTC
-Built: R 4.4.3; ; 2025-09-01 00:45:13 UTC; windows
+Encoding: UTF-8
+Built: R 4.4.0; ; 2024-04-25 19:46:08 UTC; windows

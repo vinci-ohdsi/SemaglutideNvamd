@@ -24,8 +24,7 @@ Author: Drew Schmidt [aut, cre],
   Christian Heckendorf [ctb] (FreeBSD improvements to meminfo),
   Wei-Chen Chen [ctb] (Windows build fixes),
   Dan Burgess [ctb] (donation of a Mac for development and testing)
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-01-24 15:40:15 UTC
-Encoding: UTF-8
-Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-25 18:47:22 UTC; windows
+Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:34:24 UTC; windows
 Archs: x64

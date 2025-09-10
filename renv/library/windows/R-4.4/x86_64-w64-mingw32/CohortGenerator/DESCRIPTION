@@ -1,42 +1,36 @@
 Package: CohortGenerator
 Type: Package
 Title: Cohort Generation for the OMOP Common Data Model
-Version: 0.11.2
-Date: 2024-09-30
-Authors@R: c(
-  person("Anthony", "Sena", email = "sena@ohdsi.org", role = c("aut", "cre")),
-  person("Jamie", "Gilbert", role = c("aut")),
-  person("Gowtham", "Rao", email = "gowthamrao@gmail.com", role = c("aut")),
-  person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut")),
-  person("Observational Health Data Science and Informatics", role = c("cph"))
-  )
+Version: 0.12.1
+Date: 2025-09-05
+Authors@R: c( person("Anthony", "Sena", email = "sena@ohdsi.org", role = c("aut", "cre")), person("Jamie", "Gilbert", role = c("aut")), person("Gowtham", "Rao", email = "gowthamrao@gmail.com", role = c("aut")), person("Freddy", "Avila Cruz", role = c("aut")), person("Martijn", "Schuemie", email = "schuemie@ohdsi.org", role = c("aut")), person("Observational Health Data Science and Informatics", role = c("cph")) )
 Maintainer: Anthony Sena <sena@ohdsi.org>
-Description: Generate cohorts and subsets using an Observational 
-  Medical Outcomes Partnership (OMOP) Common Data Model (CDM) Database. 
-  Cohorts are  defined using 'CIRCE' (<https://github.com/ohdsi/circe-be>) or 
-  SQL compatible with 'SqlRender' (<https://github.com/OHDSI/SqlRender>).
+Description: Generate cohorts and subsets using an Observational  Medical Outcomes Partnership (OMOP) Common Data Model (CDM) Database.  Cohorts are  defined using 'CIRCE' (<https://github.com/ohdsi/circe-be>) or  SQL compatible with 'SqlRender' (<https://github.com/OHDSI/SqlRender>).
 Depends: DatabaseConnector (>= 5.0.0), R (>= 3.6.0), R6
-Imports: checkmate, digest, dplyr, lubridate, methods, ParallelLogger
-        (>= 3.0.0), readr (>= 2.1.0), rlang, RJSONIO, jsonlite,
-        ResultModelManager, SqlRender (>= 1.11.1), stringi (>= 1.7.6),
-        tibble
-Suggests: CirceR (>= 1.1.1), Eunomia, knitr, rmarkdown, testthat,
-        withr, zip
+Imports: checkmate, digest, dplyr, lubridate, methods, ParallelLogger (>=
+    3.0.0), readr (>= 2.1.0), rlang, jsonlite, ResultModelManager, SqlRender
+    (>= 1.11.1), stringi (>= 1.7.6), tibble
+Suggests: CirceR (>= 1.1.1), duckdb, Eunomia, ggplot2, knitr, rmarkdown,
+    testthat, withr, zip
 License: Apache License
 VignetteBuilder: knitr
 URL: https://ohdsi.github.io/CohortGenerator/,
-        https://github.com/OHDSI/CohortGenerator
+    https://github.com/OHDSI/CohortGenerator
 BugReports: https://github.com/OHDSI/CohortGenerator/issues
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Encoding: UTF-8
 Language: en-US
-NeedsCompilation: no
-Packaged: 2024-09-30 16:03:28 UTC; asena5
-Author: Anthony Sena [aut, cre],
-  Jamie Gilbert [aut],
-  Gowtham Rao [aut],
-  Martijn Schuemie [aut],
-  Observational Health Data Science and Informatics [cph]
-Repository: RSPM
-Date/Publication: 2024-09-30 19:40:02 UTC
-Built: R 4.4.0; ; 2024-10-01 04:54:06 UTC; windows
+LazyData: true
+Author: Anthony Sena [aut, cre], Jamie Gilbert [aut], Gowtham Rao [aut], Freddy Avila Cruz [aut], Martijn Schuemie [aut], Observational Health Data Science and Informatics [cph]
+Built: R 4.4.1; ; 2025-09-10 16:25:24 UTC; windows
+RemoteType: github
+RemoteHost: api.github.com
+RemoteUsername: vinci-ohdsi
+RemoteRepo: CohortGenerator
+RemoteRef: 0.11.2
+RemoteSha: 28c6afde9ae6fc09b0b39dc6c50e62224ce6f060
+GithubHost: api.github.com
+GithubRepo: CohortGenerator
+GithubUsername: vinci-ohdsi
+GithubRef: 0.11.2
+GithubSHA1: 28c6afde9ae6fc09b0b39dc6c50e62224ce6f060

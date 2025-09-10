@@ -40,7 +40,7 @@ Author: Hadley Wickham [aut, cre],
   Kevin Ushey [ctb],
   Posit Software, PBC [cph, fnd]
 Maintainer: Hadley Wickham <hadley@posit.co>
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2024-01-24 14:50:09 UTC
-Built: R 4.4.0; x86_64-w64-mingw32; 2025-03-04 05:05:08 UTC; windows
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-06-23 03:06:29 UTC; windows
 Archs: x64

@@ -30,8 +30,8 @@ createResultsDataModel
                         Create the results data model tables on a
                         database server.
 createSubsetCohortWindow
-                        A definition of subset functions to be applied
-                        to a set of cohorts
+                        Create a relative time window for cohort subset
+                        operations
 dropCohortStatsTables   Drop cohort statistics tables
 exportCohortStatsTables
                         Export the cohort statistics tables to the file
@@ -71,6 +71,8 @@ isSnakeCase             Used to check if a string is in snake case
 isTaskRequired          Is a task required when running in incremental
                         mode
 migrateDataModel        Migrate Data model
+omopCdmDrugExposure     OMOP CDM Drug Exposure Sample Data
+omopCdmPerson           OMOP CDM Person Sample Data
 readCsv                 Used to read a .csv file
 recordTasksDone         Record a task as complete
 runCohortGeneration     Run a cohort generation and export results

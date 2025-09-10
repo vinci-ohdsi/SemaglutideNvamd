@@ -59,6 +59,6 @@ Author: Joe Cheng [aut],
   Denis Ineshin [ctb, cph] (ion.rangeSlider library),
   Sami Samhuri [ctb, cph] (Javascript strftime library)
 Maintainer: Carson Sievert <carson@posit.co>
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-11-23 08:50:07 UTC
-Built: R 4.4.0; ; 2024-04-25 20:40:47 UTC; windows
+Built: R 4.4.3; ; 2025-06-23 01:45:09 UTC; windows

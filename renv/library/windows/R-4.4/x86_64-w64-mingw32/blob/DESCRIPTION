@@ -27,6 +27,6 @@ Author: Hadley Wickham [aut],
   Kirill Müller [cre],
   RStudio [cph, fnd]
 Maintainer: Kirill Müller <kirill@cynkra.com>
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-03-17 12:00:06 UTC
-Built: R 4.4.0; ; 2025-03-06 01:15:12 UTC; windows
+Built: R 4.4.3; ; 2025-06-23 02:07:20 UTC; windows

@@ -16,7 +16,7 @@ BugReports: https://github.com/kevinushey/sourcetools/issues
 Encoding: UTF-8
 NeedsCompilation: yes
 Packaged: 2023-01-31 18:03:04 UTC; kevin
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2023-02-01 10:10:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-09-01 00:45:13 UTC; windows
+Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-25 19:48:01 UTC; windows
 Archs: x64

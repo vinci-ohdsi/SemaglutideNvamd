@@ -39,7 +39,6 @@ Author: Peter Solymos [aut, cre] (<https://orcid.org/0000-0001-7337-1740>),
   Zygmunt Zawadzki [aut],
   Henrik Bengtsson [ctb],
   R Core Team [cph, ctb]
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2023-06-27 09:10:02 UTC
-Encoding: UTF-8
-Built: R 4.4.0; ; 2024-04-25 19:39:20 UTC; windows
+Built: R 4.4.3; ; 2025-06-23 00:42:32 UTC; windows

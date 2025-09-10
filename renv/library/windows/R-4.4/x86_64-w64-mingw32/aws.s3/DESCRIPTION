@@ -43,6 +43,6 @@ Author: Thomas J. Leeper [aut] (<https://orcid.org/0000-0003-4097-6326>),
   Dhruv Aggarwal [ctb],
   Alyssa Columbus [ctb],
   Simon Urbanek [cre, ctb]
-Repository: RSPM
+Repository: CRAN
 Date/Publication: 2020-04-07 21:10:02 UTC
-Built: R 4.4.0; ; 2024-04-25 20:54:23 UTC; windows
+Built: R 4.4.3; ; 2025-06-23 02:07:26 UTC; windows

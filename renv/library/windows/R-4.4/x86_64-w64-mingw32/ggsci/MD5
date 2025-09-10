@@ -1,11 +1,11 @@
-79c0286b6d2e2c79b3601a5a1ded0077 *DESCRIPTION
+29688ffa69347a40c3dbcb23484d4cea *DESCRIPTION
 0b736cc72d4d87a6981023c107575907 *INDEX
 3fa360a72ab769a35d505dd4e95a1480 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 4da61072c8241eb20763ea508f2438d3 *Meta/hsearch.rds
 2e8e6aeea2cc7e27495bd6dc032123e1 *Meta/links.rds
 46ae34c85b160abda8936e6365dff9b7 *Meta/nsInfo.rds
-a500bfd76a6b5f5444e47f27abf1aecb *Meta/package.rds
+5f0133ce350271accf1f883a79f10422 *Meta/package.rds
 0eb69511b3bc0080be960a3654cde33a *Meta/vignette.rds
 b98ef0b2a1a89eb4ddfa2a155141930b *NAMESPACE
 ef446bb3b8828cb57658e101f6e8be8b *NEWS.md
@@ -50,9 +50,9 @@ deba56f313970d615d57ccc2c91c025c *help/figures/README-ggsci-tw3-1.png
 90f4b522f2c486c550b6be2e3ca760f7 *help/figures/README-ggsci-uchicago-1.png
 1167411f9aa590bad2d57245372a94e0 *help/figures/README-ggsci-ucscgb-1.png
 5f2440dd715678c9705ac7066611e816 *help/figures/logo.png
-9b5c8764d93fa8e1d515581e6f57638a *help/ggsci.rdb
-344c2e9be63a7267360dda3e38a68381 *help/ggsci.rdx
-8edc6fbc58e3219e1db7e56f382e4abc *help/paths.rds
+13b1e673a64272327318bbe1faefe7df *help/ggsci.rdb
+6d7b2b8d3f44904fe4350534e2ccd32a *help/ggsci.rdx
+0c6134b60c6b7f744852f94cab203dc8 *help/paths.rds
 2cb40d29120204035ec696354da6086f *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 d4df7d39cc27a5c29cf3f19bd9b12f55 *logo/logo.R
