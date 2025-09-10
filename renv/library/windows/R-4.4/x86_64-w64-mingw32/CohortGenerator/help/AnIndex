@@ -36,8 +36,6 @@ isSnakeCase	isSnakeCase
 isTaskRequired	isTaskRequired
 LimitSubsetOperator	LimitSubsetOperator
 migrateDataModel	migrateDataModel
-omopCdmDrugExposure	omopCdmDrugExposure
-omopCdmPerson	omopCdmPerson
 readCsv	readCsv
 recordTasksDone	recordTasksDone
 runCohortGeneration	runCohortGeneration

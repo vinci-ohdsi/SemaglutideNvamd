@@ -57,7 +57,7 @@
       "RemoteUsername": "vinci-ohdsi",
       "RemoteRepo": "CohortGenerator",
       "RemoteRef": "0.11.2",
-      "RemoteSha": "28c6afde9ae6fc09b0b39dc6c50e62224ce6f060"
+      "RemoteSha": "91c199b2d35c0d2f8eb007293861012826fd276b"
     },
     "CohortIncidence": {
       "Package": "CohortIncidence",
