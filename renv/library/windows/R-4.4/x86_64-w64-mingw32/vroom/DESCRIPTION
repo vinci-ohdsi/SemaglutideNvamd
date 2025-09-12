@@ -53,7 +53,7 @@ Author: Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),
   Mikkel Jørgensen [cph] (grisu3 implementation),
   Posit Software, PBC [cph, fnd]
 Maintainer: Jennifer Bryan <jenny@posit.co>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2023-12-05 23:50:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-06-23 02:34:56 UTC; windows
+Built: R 4.4.0; x86_64-w64-mingw32; 2025-03-17 16:15:20 UTC; windows
 Archs: x64

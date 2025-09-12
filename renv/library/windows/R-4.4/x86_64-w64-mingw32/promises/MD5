@@ -1,4 +1,4 @@
-aa0c569359b1d4ac0eac9e7cee5b3847 *DESCRIPTION
+e6de4e61b3035a8e3053e3852f63cc37 *DESCRIPTION
 975de5551786a6c20800cf8f686a00a0 *INDEX
 748f944dcb4546a6afaad487ca7627c3 *LICENSE
 99992e0beed2b66e80658db70fc1ddd7 *Meta/Rd.rds
@@ -6,13 +6,13 @@ f2188a6031760019998f87fae88e766e *Meta/features.rds
 4e85ecd9620940a03fe706d7b31683ae *Meta/hsearch.rds
 fac22d474e303da4018174637ce2df5e *Meta/links.rds
 59b8b6de05491298efb9002fd26ce228 *Meta/nsInfo.rds
-5d1b20173d517d60ef1516a25e6fd5d0 *Meta/package.rds
+37e0feb0a50a76b7c6b5142133bc7777 *Meta/package.rds
 ad9c9511ba8eee692f0f8c603df5363f *Meta/vignette.rds
 ba3e941241d39251bbdaf46d88ef1776 *NAMESPACE
 059df1974da3f31c728879374dd79d1b *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/promises
-bcebccb3dcb31be57c41aeed60e0ef08 *R/promises.rdb
-cd28afe59029c381bf8b86eb2069983f *R/promises.rdx
+50822c0ba2569ab3288e909e663cfa02 *R/promises.rdb
+335a44337a9ecf35ef3a71028ff45ce9 *R/promises.rdx
 33070c0c7cb5a89108e974a273dd84e7 *WORDLIST
 14e7fe77d09d02fb0bf9b89794a08c3a *doc/index.html
 0695ecc7b53ae33e7b7e771c3196d3cf *doc/promises_01_motivation.Rmd
@@ -42,9 +42,9 @@ c3978703d8f40f2679795335715e98f4 *help/figures/lifecycle-experimental.svg
 27b879bf3677ea76e3991d56ab324081 *help/figures/lifecycle-questioning.svg
 53b3f893324260b737b3c46ed2a0e643 *help/figures/lifecycle-stable.svg
 1c1fe7a759b86dc6dbcbe7797ab8246c *help/figures/lifecycle-superseded.svg
-7286a91ba50c9da8b257cef82ece52f5 *help/paths.rds
-bbb7067ecb3d24d0851954ab59811928 *help/promises.rdb
-b1b76ba6dcb561d7775362ddcc4660a3 *help/promises.rdx
+69baa0b582149ab6c5a4313eca4a594f *help/paths.rds
+5824a9b5b2f32885bd895491fac28352 *help/promises.rdb
+4f4f5ecf3015e61eede4526f9e995bbf *help/promises.rdx
 88410fc7e1bff754eabe6f2f3446127d *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-a788fa34ce9b0c4438c72db909618921 *libs/x64/promises.dll
+803628cbbb99a1e855ad071d1559cadc *libs/x64/promises.dll

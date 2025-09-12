@@ -1,4 +1,4 @@
-daa92768196da2c39b9e15a20caa0428 *DESCRIPTION
+a5cf53ff2df800df21fb8c9ff6d8cd30 *DESCRIPTION
 b79daaf452177d3b608f5be7d5229adc *INDEX
 d863c76b0410281271c62c58c6639147 *LICENSE
 546fc7e256c7015c3dd329ab587faba0 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 cbad90849f0a5d3dce57f3d71d7f6a5f *Meta/hsearch.rds
 f1112ed98ce707e3e31995997ba36051 *Meta/links.rds
 7c3e9b423b30a6ee33794289d3b2c59a *Meta/nsInfo.rds
-2b75429fbe414616e4a81c526be8db39 *Meta/package.rds
+3db9134d20c1588c6e3063881ec15854 *Meta/package.rds
 19e63fe1b68d3d1bc4f90852475fa478 *Meta/vignette.rds
 520be9c7ffa06faf0b5333781b70cf29 *NAMESPACE
 f1ceec72fb9ad5b6776f5c7a2c8ee7d3 *NEWS.md
@@ -36,9 +36,9 @@ b30884872dcbdaea031f7a1b00d6d16c *examples/visit-sequences.csv
 d962b2177f39cdc628d8b72160e9379a *examples/visit-sequences.json
 5fc61fd11f3a6fe31e81e2ac1320b390 *help/AnIndex
 8d661e9f7040662f3af80a45e6ce4ab9 *help/aliases.rds
-798520989b9049a5ed4c5c02c06cf014 *help/paths.rds
-087c749da63be4429585a7453afbaaaf *help/sunburstR.rdb
-656a051a26982a9b158a1371efe3cdb2 *help/sunburstR.rdx
+051c4b9a4338034fb99ed7ad22aa6027 *help/paths.rds
+566055b8bc191180996227f787225935 *help/sunburstR.rdb
+5d6228943d1bce78cc8a6a0310d760cb *help/sunburstR.rdx
 fe62cec6a45707a2c52d44a1078d6484 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 7d26c825a4745e689d91b358351450f9 *htmlwidgets/lib/d2b/LICENSE

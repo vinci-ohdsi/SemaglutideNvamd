@@ -51,13 +51,8 @@
     "CohortGenerator": {
       "Package": "CohortGenerator",
       "Version": "0.11.2",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "vinci-ohdsi",
-      "RemoteRepo": "CohortGenerator",
-      "RemoteRef": "0.11.2",
-      "RemoteSha": "28c6afde9ae6fc09b0b39dc6c50e62224ce6f060"
+      "Source": "Repository",
+      "Repository": "CRAN"
     },
     "CohortIncidence": {
       "Package": "CohortIncidence",

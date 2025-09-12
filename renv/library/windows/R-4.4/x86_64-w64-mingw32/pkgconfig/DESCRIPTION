@@ -15,6 +15,6 @@ BugReports: https://github.com/r-lib/pkgconfig/issues
 Encoding: UTF-8
 NeedsCompilation: no
 Packaged: 2019-09-22 08:42:40 UTC; gaborcsardi
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2019-09-22 09:20:02 UTC
-Built: R 4.4.1; ; 2024-07-09 00:24:40 UTC; windows
+Built: R 4.4.0; ; 2025-03-06 01:02:47 UTC; windows

@@ -1,4 +1,4 @@
-df2f9656860583dbcfefa8e1e41a93c0 *DESCRIPTION
+65e13d8d90fc00f398800006dc261936 *DESCRIPTION
 96ad139a9640b3dfe2405f81f8e7b7a7 *INDEX
 5dafa3d4b464de235f553581158b84ee *LICENSE
 8df44103ed503453779aa4f1eb8f1d9c *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 807c1f6b8958784cff8b2d7ae2ce6338 *Meta/hsearch.rds
 9b1f03665307c0e7fd6dc5855bdca6e6 *Meta/links.rds
 01129ee49ba82588fc3937a8d7c94cd9 *Meta/nsInfo.rds
-8b134951f20436f7f1dc1c4491773bf1 *Meta/package.rds
+d8fedd42561bd01d45ca319f4e0ca1c6 *Meta/package.rds
 b5beffbdcdd28053b20ad951138951ac *Meta/vignette.rds
 28afa80f0c5c48a8edc2245bc3ab32f6 *NAMESPACE
 874aafebe974a382ab2d839b862e0f53 *NEWS.md
@@ -27,9 +27,9 @@ f63b2d72b768d4a9422a6cb810444a9d *doc/intro_htmlwidgets.R
 9457fb818868111f2c58a9fc563019c7 *examples/office-fabric.R
 0ac634b6e6c44658c94964acab94925b *help/AnIndex
 024788587c63a11a1ac4a1b50d94d08c *help/aliases.rds
-6be1bd6d5904e3752b88deae390e073a *help/paths.rds
-387661d7a07552f189c81572deb23136 *help/reactR.rdb
-6a05c8eff9da05d4dc4ca8bfd2e85f66 *help/reactR.rdx
+90a616d58f56dafd76b41bfd9b42a5ed *help/paths.rds
+05d0e4888e7d370f50a84d663111cece *help/reactR.rdb
+1e46ef957ba1b1f2ca18cf4e34225ed0 *help/reactR.rdx
 cfdea5bab69cbd480df1998b46e97560 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 f534a520931d5f4e8ab2cdecc1d3354a *templates/input_app.R.txt

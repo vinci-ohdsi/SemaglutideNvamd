@@ -48,7 +48,7 @@ Author: Hadley Wickham [aut],
   Jukka Jylänki [ctb, cph] (grisu3 implementation),
   Mikkel Jørgensen [ctb, cph] (grisu3 implementation)
 Maintainer: Jennifer Bryan <jenny@posit.co>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2024-01-10 23:20:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-06-23 03:06:30 UTC; windows
+Built: R 4.4.0; x86_64-w64-mingw32; 2025-03-17 16:19:00 UTC; windows
 Archs: x64

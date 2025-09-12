@@ -27,7 +27,7 @@ Packaged: 2024-01-18 08:57:24 UTC; vspinu
 Author: Vitalie Spinu [aut, cre],
   Google Inc. [ctb, cph]
 Maintainer: Vitalie Spinu <spinuvit@gmail.com>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2024-01-18 09:20:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-06-23 00:42:15 UTC; windows
+Built: R 4.4.0; x86_64-w64-mingw32; 2025-03-05 20:20:41 UTC; windows
 Archs: x64

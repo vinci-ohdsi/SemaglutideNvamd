@@ -40,6 +40,6 @@ Author: R Special Interest Group on Databases (R-SIG-DB) [aut],
   Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
   R Consortium [fnd]
 Maintainer: Kirill Müller <kirill@cynkra.com>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2024-06-02 21:50:02 UTC
-Built: R 4.4.3; ; 2025-06-23 00:42:16 UTC; windows
+Built: R 4.4.0; ; 2025-03-06 03:21:51 UTC; windows

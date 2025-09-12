@@ -35,12 +35,12 @@ WHERE cohort_definition_id IN (
 )
 ;
 
-INSERT INTO @cohort_database_schema.@cohort_table WITH (TABLOCK) (
+INSERT INTO @cohort_database_schema.@cohort_table (
   subject_id,
   cohort_definition_id,
   cohort_start_date,
   cohort_end_date
-) 
+)
 SELECT
 	s.subject_id,
 	s.cohort_definition_id,
@@ -61,13 +61,6 @@ FROM (
     d.condition_start_date  cohort_start_date
   FROM @cdm_database_schema.condition_occurrence d
   INNER JOIN #Codesets c ON c.concept_id = d.condition_concept_id
-  UNION ALL
-  SELECT 
-    o.person_id subject_id,
-    c.cohort_definition_id,
-    o.observation_date  cohort_start_date
-  FROM @cdm_database_schema.observation o
-  INNER JOIN #Codesets c ON c.concept_id = o.observation_concept_id
   {@occurrence_type == 'first'}?{
   ) e
   }:{}

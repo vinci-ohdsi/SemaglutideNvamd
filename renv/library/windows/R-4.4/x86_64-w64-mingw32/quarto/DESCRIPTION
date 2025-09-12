@@ -32,6 +32,6 @@ Author: JJ Allaire [aut] (<https://orcid.org/0000-0003-0174-9868>),
     (<https://orcid.org/0000-0003-4474-2498>),
   Posit Software, PBC [cph, fnd]
 Maintainer: Christophe Dervieux <cderv@posit.co>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2024-07-20 06:20:01 UTC
-Built: R 4.4.3; ; 2025-06-23 02:22:05 UTC; windows
+Built: R 4.4.0; ; 2024-07-21 04:24:37 UTC; windows

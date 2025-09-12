@@ -1,10 +1,23 @@
 Package: networkD3
 Type: Package
 Title: D3 JavaScript Network Graphs from R
-Description: Creates 'D3' 'JavaScript' network, tree, dendrogram, and Sankey graphs from 'R'.
+Description: Creates 'D3' 'JavaScript' network, tree, dendrogram, and Sankey
+    graphs from 'R'.
 Version: 0.4
 Date: 2017-03-18
-Authors@R: c( person("J.J.", "Allaire", role = "aut"), person("Peter", "Ellis", role = "ctb"), person("Christopher", "Gandrud", email = "christopher.gandrud@gmail.com", role = c("aut", "cre")), person("Kevin", "Kuo", role = "ctb"), person("B.W.", "Lewis", role = "ctb"), person("Jonathan", "Owen", role = "ctb"), person("Kenton", "Russell", role = "aut"), person("Jennifer","Rogers", role = "ctb"), person("Charles", "Sese", role = "ctb"), person("CJ", "Yetman", role = "aut") )
+Authors@R: c(
+    person("J.J.", "Allaire", role = "aut"),
+    person("Peter", "Ellis", role = "ctb"),
+    person("Christopher", "Gandrud", email = "christopher.gandrud@gmail.com",
+    role = c("aut", "cre")),
+    person("Kevin", "Kuo", role = "ctb"),
+    person("B.W.", "Lewis", role = "ctb"),
+    person("Jonathan", "Owen", role = "ctb"),
+    person("Kenton", "Russell", role = "aut"),
+    person("Jennifer","Rogers", role = "ctb"),
+    person("Charles", "Sese", role = "ctb"),
+    person("CJ", "Yetman", role = "aut")
+    )
 URL: https://CRAN.R-project.org/package=networkD3
 BugReports: https://github.com/christophergandrud/networkD3/issues
 License: GPL (>= 3)
@@ -16,15 +29,18 @@ LazyData: true
 RoxygenNote: 6.0.1
 NeedsCompilation: no
 Packaged: 2017-03-18 15:59:43 UTC; cgandrud
-Author: J.J. Allaire [aut], Peter Ellis [ctb], Christopher Gandrud [aut, cre], Kevin Kuo [ctb], B.W. Lewis [ctb], Jonathan Owen [ctb], Kenton Russell [aut], Jennifer Rogers [ctb], Charles Sese [ctb], CJ Yetman [aut]
+Author: J.J. Allaire [aut],
+  Peter Ellis [ctb],
+  Christopher Gandrud [aut, cre],
+  Kevin Kuo [ctb],
+  B.W. Lewis [ctb],
+  Jonathan Owen [ctb],
+  Kenton Russell [aut],
+  Jennifer Rogers [ctb],
+  Charles Sese [ctb],
+  CJ Yetman [aut]
 Maintainer: Christopher Gandrud <christopher.gandrud@gmail.com>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2017-03-18 17:31:09 UTC
-Built: R 4.4.3; ; 2025-03-17 03:59:42 UTC; windows
-RemoteType: standard
-RemotePkgRef: networkD3
-RemoteRef: networkD3
-RemoteRepos: https://cloud.r-project.org
-RemoteReposName: CRAN
-RemotePkgPlatform: x86_64-w64-mingw32
-RemoteSha: 0.4
+Encoding: UTF-8
+Built: R 4.4.0; ; 2024-04-25 21:02:50 UTC; windows

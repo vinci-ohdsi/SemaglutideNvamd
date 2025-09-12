@@ -12,7 +12,8 @@ SystemRequirements: Java JDK 1.2 or higher (for JRI/REngine JDK 1.4 or
 BugReports: https://github.com/s-u/rJava/issues
 NeedsCompilation: yes
 Packaged: 2024-01-25 22:25:37 UTC; rforge
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2024-01-26 16:02:25 UTC
-Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:25:11 UTC; windows
+Encoding: UTF-8
+Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-25 20:39:04 UTC; windows
 Archs: x64

@@ -1,4 +1,4 @@
-ff53b819ca4ac56dc3fdfe3585de6724 *DESCRIPTION
+6022e866ed78d3704917fcdfebce09f2 *DESCRIPTION
 6644c1ee1d7e115cfe9f4b2ba7add364 *INDEX
 6986ffa89cf2c45969c68a8a73663251 *Meta/Rd.rds
 914c254162a6f48fdba80567a14b4fb9 *Meta/data.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 708e27289cd3f1f27dbe7eb9801f763d *Meta/hsearch.rds
 d4aae39275dc6bb770c4e6c5548dd43f *Meta/links.rds
 93bb19e4ab785af10e5961e5b8272290 *Meta/nsInfo.rds
-baabe416bfd46805ba12de048389422d *Meta/package.rds
+670fd066fb4f0df6a80b1750941808bd *Meta/package.rds
 23793958b5130f3112f0c9316b7ccec1 *NAMESPACE
 4e41b34a07f99e5fa67092b70ef5a6bf *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/CirceR
@@ -16,10 +16,10 @@ e59aecbdb67b0613360b47405268cebe *R/CirceR.rdb
 53a3af93cd69ee2abb20e7dfd1aa7942 *data/conceptSetJson.rda
 78f52b28b083876906055586358bfbb5 *data/conceptSetListJson.rda
 6cf22c9a89c16b88746fc17324355674 *help/AnIndex
-ceb00c4131b90b22af1daad6f2ac6cbe *help/CirceR.rdb
-a8c0869db28a94f20673e161ea894f0f *help/CirceR.rdx
+7abcdbe1870d0f325669fd249da366a4 *help/CirceR.rdb
+d74f882c3cad9a6b78580ca7bcba7cbe *help/CirceR.rdx
 919dac829aced689549bef87d3b25aae *help/aliases.rds
-32572d639751c920ee771e446587022a *help/paths.rds
+6f1d4cacb370ca6d7fb811fb8340d55f *help/paths.rds
 d71de66b65ab44f295f50f1d53a69cee *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 51b27108edf6007144099c5e06c2825f *java/circe-1.11.3.jar

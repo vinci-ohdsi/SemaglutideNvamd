@@ -1,8 +1,11 @@
 Package: ResultModelManager
 Title: Result Model Manager
 Version: 0.5.11
-Authors@R: person("Jamie", "Gilbert", , "gilbert@ohdsi.org", role = c("aut", "cre"))
-Description: Database data model management utilities for R packages in the Observational Health Data Sciences and Informatics program <https://ohdsi.org>. 'ResultModelManager' provides utility functions to allow package maintainers to migrate existing SQL database models, export and import results in consistent patterns.
+Authors@R: 
+    person("Jamie", "Gilbert", , "gilbert@ohdsi.org", role = c("aut", "cre"))
+Description: Database data model management utilities for R packages in the Observational Health Data Sciences and
+    Informatics program <https://ohdsi.org>. 'ResultModelManager' provides utility functions to allow package
+    maintainers to migrate existing SQL database models, export and import results in consistent patterns.
 URL: https://github.com/OHDSI/ResultModelManager
 BugReports: https://github.com/OHDSI/ResultModelManager/issues
 License: Apache License (== 2.0)
@@ -10,10 +13,10 @@ Encoding: UTF-8
 VignetteBuilder: knitr
 RoxygenNote: 7.3.2
 Depends: R (>= 4.1.0), R6, DatabaseConnector (>= 6.0.0)
-Imports: SqlRender, ParallelLogger, checkmate, DBI, pool, readr, zip, dplyr,
-    dbplyr, rlang, lubridate, fastmap, withr
-Suggests: testthat (>= 3.0.0), RSQLite, duckdb, knitr, rmarkdown, keyring,
-    devtools, pkgdown, remotes, styler, Andromeda
+Imports: SqlRender, ParallelLogger, checkmate, DBI, pool, readr, zip,
+        dplyr, dbplyr, rlang, lubridate, fastmap, withr
+Suggests: testthat (>= 3.0.0), RSQLite, duckdb, knitr, rmarkdown,
+        keyring, devtools, pkgdown, remotes, styler, Andromeda
 Config/testthat/edition: 3
 NeedsCompilation: no
 Packaged: 2024-09-18 17:04:52 UTC; jgilber2
@@ -22,10 +25,3 @@ Maintainer: Jamie Gilbert <gilbert@ohdsi.org>
 Repository: RSPM
 Date/Publication: 2024-09-19 05:50:06 UTC
 Built: R 4.4.0; ; 2024-09-20 04:29:09 UTC; windows
-RemoteType: standard
-RemotePkgRef: ResultModelManager
-RemoteRef: ResultModelManager
-RemoteRepos: https://packagemanager.posit.co/cran/latest
-RemoteReposName: CRAN
-RemotePkgPlatform: x86_64-w64-mingw32
-RemoteSha: 0.5.11

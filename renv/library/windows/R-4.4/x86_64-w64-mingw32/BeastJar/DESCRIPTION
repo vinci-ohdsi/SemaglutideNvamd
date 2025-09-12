@@ -30,6 +30,6 @@ Author: Marc A. Suchard [aut, cre, cph],
   Andrew Rambaut [cph],
   Alexei J. Drummond [cph]
 Maintainer: Marc A. Suchard <msuchard@ucla.edu>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2020-10-26 14:20:06 UTC
-Built: R 4.4.3; ; 2025-06-23 00:47:26 UTC; windows
+Built: R 4.4.0; ; 2024-04-25 20:40:53 UTC; windows

@@ -54,6 +54,6 @@ NeedsCompilation: no
 Packaged: 2023-02-06 02:39:47 UTC; kassambara
 Author: Alboukadel Kassambara [aut, cre]
 Maintainer: Alboukadel Kassambara <alboukadel.kassambara@gmail.com>
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2023-02-10 16:20:02 UTC
-Built: R 4.4.3; ; 2025-06-23 04:29:41 UTC; windows
+Built: R 4.4.0; ; 2024-04-26 00:31:02 UTC; windows

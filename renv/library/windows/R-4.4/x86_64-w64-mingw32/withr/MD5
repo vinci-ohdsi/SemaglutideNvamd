@@ -1,4 +1,4 @@
-6081eb747de838fd2436dc5a56521cf4 *DESCRIPTION
+05dc62011dd7bc75483e98baedd3b9c5 *DESCRIPTION
 916c7dd5ed692050a065831473234a03 *INDEX
 6d8b003cc83b1dfced7bd996b18429dc *LICENSE
 ca979ba74382814bffa780283843f6e5 *Meta/Rd.rds
@@ -6,13 +6,13 @@ f2188a6031760019998f87fae88e766e *Meta/features.rds
 832e924033bcfb0646780d633f7c18e4 *Meta/hsearch.rds
 63491d0b7ccc240e6b740ee7b8941806 *Meta/links.rds
 09a71d2c118471761a421ba0d93eec8f *Meta/nsInfo.rds
-3fb457d647388fcac0b5593f9a318011 *Meta/package.rds
+ed1c66fa1d368a5a52a48e111a7b3161 *Meta/package.rds
 477d48f8c01d804ce33db8d6037a78ed *Meta/vignette.rds
 3604c48113b02b685fdd0eba1ee3e4d9 *NAMESPACE
 d623d5ed2e86bece67f2dcaea04ebcd7 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/withr
-644a8de054250684b792de79df8dceed *R/withr.rdb
-7ab5aa8b9dcc64157e8002efe986b9f8 *R/withr.rdx
+33a61468894f1a50016b3d24950cc46a *R/withr.rdb
+128a093a6eaae59705eb71bf5dd05acf *R/withr.rdx
 bf271e9edeb6917fcc341946cb75c1f4 *doc/index.html
 7b827e9f1a5a6e2eac5275c4fdda8021 *doc/withr.R
 30f0ed49972f6395a4b694e990c00e93 *doc/withr.Rmd
@@ -30,8 +30,8 @@ f41ed996be135fb35afe00641621da61 *help/figures/lifecycle-questioning.svg
 ed42e3fbd7cc30bc6ca8fa9b658e24a8 *help/figures/lifecycle-stable.svg
 bf2f1ad432ecccee3400afe533404113 *help/figures/lifecycle-superseded.svg
 ab471e54cdcde1b00fbfb165e9c3639b *help/figures/logo.png
-2d43332f13fca6ea41840b2857092564 *help/paths.rds
-5db3d8619a127c58bb21691fd5aea8de *help/withr.rdb
-f7b35022b0b7cfafc6a89ac5102e88da *help/withr.rdx
+6357afd514105012d342ddb2f06d47dd *help/paths.rds
+6a7b2eaf7eaa45ebb96f4a500af2fc08 *help/withr.rdb
+3ca154478db80e527d2bf50aa5b2f5a1 *help/withr.rdx
 ad5579357fb83cd53cc8f8b190afc82e *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

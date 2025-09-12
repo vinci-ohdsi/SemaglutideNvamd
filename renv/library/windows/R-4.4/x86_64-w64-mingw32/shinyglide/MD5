@@ -1,11 +1,11 @@
-276e1fd4262a3678737e4ea34c36ed7f *DESCRIPTION
+1a0841b22d6dd6cb36db2f6127f48ad0 *DESCRIPTION
 20093386213adf3f78712f15c3a82b39 *INDEX
 022a4de17f2817b67df6eff15bb48ea0 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 9df9c09d5848b153ce44b1a109f02950 *Meta/hsearch.rds
 ba5187757be8292609b137646a7f4d3f *Meta/links.rds
 d0a1fc93385e2bbb490c6e8f01cb4f7c *Meta/nsInfo.rds
-167c75cc83a163c24d7326559df7e84b *Meta/package.rds
+2252e65e4159f5c8c64d47e318dd0afa *Meta/package.rds
 7cc42452396c0c0a1ab881ec1fbeb999 *Meta/vignette.rds
 b2a22feeeb44e6d67236c35cdf06f5b4 *NAMESPACE
 5b1e5eff44f80f4085d06eac46cc4b56 *NEWS.md
@@ -29,9 +29,9 @@ c46870f5a7458538ff3bb14b4188153c *examples/04_custom_controls/app.R
 d9fbfcdcc1b6a52ac1145e643c3f5dd8 *examples/05_multi_glides/app.R
 cd4c505e69546399d6cc85e847e3f5f3 *help/AnIndex
 33db870a331a2929d19b543faea0cf70 *help/aliases.rds
-f4e52e89d0867f90df904411e11351d6 *help/paths.rds
-272f90619dd19641befa49ca285fd2ca *help/shinyglide.rdb
-65353a0b6dc05449e1dfe1dc10aced3b *help/shinyglide.rdx
+ad633aceb61a65d991ad82acc6e0e5ef *help/paths.rds
+e5cfa1de5dd9852a427e4a8dea436587 *help/shinyglide.rdb
+0d42a4f6c53b7dfd8919072a4fa2842f *help/shinyglide.rdx
 62da58d4603ce1f89eec77c6ec68e604 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 c5cf95e9abcca2d53a7ca08b34a72cfd *packer/shinyglide.js

@@ -10,7 +10,8 @@ License: GPL (>= 2)
 LazyLoad: yes
 Packaged: 2017-04-10 02:26:43 UTC; lafaye
 NeedsCompilation: yes
-Repository: CRAN
+Repository: RSPM
 Date/Publication: 2017-04-12 14:28:23 UTC
-Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:24:55 UTC; windows
+Encoding: UTF-8
+Built: R 4.4.0; x86_64-w64-mingw32; 2024-04-25 20:02:52 UTC; windows
 Archs: x64
