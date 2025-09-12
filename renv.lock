@@ -335,7 +335,7 @@
       "RemoteUsername": "vinci-ohdsi",
       "RemoteRepo": "VaTools",
       "RemoteRef": "develop",
-      "RemoteSha": "01d4f14a653886ff16c134bb8bc2d0a41a810589"
+      "RemoteSha": "cb0898f863cd77d08cf2f010ce8932ed138f9b13"
     },
     "abind": {
       "Package": "abind",
