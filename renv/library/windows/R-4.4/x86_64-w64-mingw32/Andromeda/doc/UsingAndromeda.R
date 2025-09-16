@@ -10,7 +10,7 @@ andr$cars <- cars
 andr
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  andr <- andromeda(cars = cars)
+# andr <- andromeda(cars = cars)
 
 ## ----eval=TRUE----------------------------------------------------------------
 appendToTable(andr$cars, cars)
@@ -31,7 +31,7 @@ close(andr3)
 isValidAndromeda(andr)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  options(andromedaTempFolder = "c:/andromedaTemp")
+# options(andromedaTempFolder = "c:/andromedaTemp")
 
 ## ----eval=TRUE----------------------------------------------------------------
 andr <- andromeda(cars = cars)
@@ -49,7 +49,7 @@ names(andr)
 colnames(andr$cars)
 
 ## ----eval=TRUE----------------------------------------------------------------
-RSQLite::dbGetQuery(andr, "SELECT * FROM cars LIMIT 5;")
+DBI::dbGetQuery(andr, "SELECT * FROM cars LIMIT 5;")
 
 ## ----eval=TRUE----------------------------------------------------------------
 myData <- data.frame(someTime = as.POSIXct(c("2000-01-01 10:00", 
@@ -60,9 +60,7 @@ myData <- data.frame(someTime = as.POSIXct(c("2000-01-01 10:00",
                                           "2004-12-31")))
 andr$myData <- myData
 andr$myData %>% 
-  collect() %>%
-  mutate(someTime = restorePosixct(someTime),
-         someDate = restoreDate(someDate))
+  collect() 
 
 ## ----eval=TRUE----------------------------------------------------------------
 doSomething <- function(batch, multiplier) {
@@ -85,14 +83,15 @@ result
 
 ## ----eval=TRUE----------------------------------------------------------------
 doSomething <- function(batch) {
-    batch$speedSquared <- batch$speed^2
-    if (is.null(andr$cars2)) {
-      andr$cars2 <- batch
-    } else {
-      appendToTable(andr$cars2, batch)
-    }
+  batch$speedSquared <- batch$speed^2
+  if (is.null(andr$cars2)) {
+    andr$cars2 <- batch
+  } else {
+    appendToTable(andr$cars2, batch)
   }
-  batchApply(andr$cars, doSomething, safe = TRUE)
+}
+
+batchApply(andr$cars, doSomething, safe = TRUE)
 
 ## ----eval=TRUE----------------------------------------------------------------
 andr$cars2 <-
@@ -100,29 +99,29 @@ andr$cars2 <-
   mutate(speedSquared = speed^2)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  saveAndromeda(andr, "c:/temp/andromeda.zip")
+# saveAndromeda(andr, "c:/temp/andromeda.zip")
 
 ## ----eval=TRUE, echo=FALSE----------------------------------------------------
 writeLines("Disconnected Andromeda. This data object can no longer be used")
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  andr <- loadAndromeda("c:/temp/andromeda.zip")
+# andr <- loadAndromeda("c:/temp/andromeda.zip")
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  andr$cars %>%
-#    filter(speed > 10)
+# andr$cars %>%
+#   filter(speed > 10)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  andr$cars %>%
-#    filter(.data$speed > 10)
+# andr$cars %>%
+#   filter(.data$speed > 10)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  speed <- 10
-#  andr$cars %>%
-#    filter(.data$speed == speed)
+# speed <- 10
+# andr$cars %>%
+#   filter(.data$speed == speed)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  speed <- 10
-#  andr$cars %>%
-#    filter(.data$speed == !!speed)
+# speed <- 10
+# andr$cars %>%
+#   filter(.data$speed == !!speed)
 

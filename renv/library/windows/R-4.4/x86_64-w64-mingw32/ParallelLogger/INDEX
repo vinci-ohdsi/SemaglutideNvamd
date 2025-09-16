@@ -17,6 +17,8 @@ createLogger            Create a logger
 excludeFromList         Exclude variables from a list of objects of the
                         same type
 getLoggers              Get all registered loggers
+getPhysicalMemory       Get the total amount of physical memory
+getThreadNumber         Return the number of the current thread
 launchLogViewer         Launch the log viewer Shiny app
 layoutEmail             Logging layout for e-mail
 layoutErrorReport       Logging layout for error report
