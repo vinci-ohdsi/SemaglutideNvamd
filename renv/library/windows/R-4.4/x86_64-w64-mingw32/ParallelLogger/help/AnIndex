@@ -15,8 +15,6 @@ createFileAppender	createFileAppender
 createLogger	createLogger
 excludeFromList	excludeFromList
 getLoggers	getLoggers
-getPhysicalMemory	getPhysicalMemory
-getThreadNumber	getThreadNumber
 launchLogViewer	launchLogViewer
 layoutEmail	layoutEmail
 layoutErrorReport	layoutErrorReport

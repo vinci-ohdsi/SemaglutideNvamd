@@ -1,9 +1,4 @@
 Multitype               Create a multitype outcome object
-cacheCyclopsModelForJava
-                        Place Cyclops model fit object in a persistent
-                        cache
-clearCyclopsModelCache
-                        Clear the Cyclops persistent cache
 coef.cyclopsFit         Extract model coefficients
 confint.cyclopsFit      Confidence intervals for Cyclops model
                         parameters
@@ -31,8 +26,6 @@ createWeightBasedSearchControl
                         weights
 cyclops                 Cyclops: Cyclic coordinate descent for
                         logistic, Poisson and survival analysis
-cyclopsLibraryFileName
-                        Get full path to installed Cyclops library
 fitCyclopsModel         Fit a Cyclops model
 fitCyclopsSimulation    Fit simulated data
 getCovariateIds         Get covariate identifiers
@@ -51,7 +44,6 @@ getUnivariableCorrelation
                         Get univariable correlation
 getUnivariableSeparability
                         Get univariable linear separability
-gradient                Extract gradient
 isInitialized           Check if a Cyclops data object is initialized
 listGPUDevices          List available GPU devices
 logLik.cyclopsFit       Extract log-likelihood
@@ -62,14 +54,12 @@ predict.cyclopsFit      Model predictions
 print.cyclopsData       Print a Cyclops data object
 print.cyclopsFit        Print a Cyclops model fit object
 readCyclopsData         Read Cyclops data from file
-residuals.cyclopsFit    Model residuals
-runBootstrap            Run bootstrap for Cyclops model parameters
+runBootstrap            Run Bootstrap for Cyclops model parameter
 setOpenCLDevice         Set GPU device
 simulateCyclopsData     Simulation Cyclops dataset
 splitTime               Split the analysis time into several intervals
                         for time-varying coefficients.
 summary.cyclopsData     Cyclops data object summary
 survfit.cyclopsFit      Calculate baseline hazard function
-testProportionality     Test hazard ratio proportionality assumption
 vcov.cyclopsFit         Calculate variance-covariance matrix for a
                         fitted Cyclops model object

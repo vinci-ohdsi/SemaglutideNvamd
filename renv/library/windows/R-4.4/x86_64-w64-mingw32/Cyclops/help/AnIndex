@@ -1,8 +1,6 @@
-Cyclops-package	cyclops
+Cyclops-package	Cyclops-package
 aconfint	aconfint
 appendSqlCyclopsData	appendSqlCyclopsData
-cacheCyclopsModelForJava	cacheCyclopsModelForJava
-clearCyclopsModelCache	clearCyclopsModelCache
 coef.cyclopsFit	coef.cyclopsFit
 confint.cyclopsFit	confint.cyclopsFit
 convertToCyclopsData	convertToCyclopsData
@@ -19,9 +17,8 @@ createNonSeparablePrior	createNonSeparablePrior
 createParameterizedPrior	createParameterizedPrior
 createPrior	createPrior
 createWeightBasedSearchControl	createWeightBasedSearchControl
-Cyclops	cyclops
+Cyclops	Cyclops-package
 cyclops	cyclops
-cyclopsLibraryFileName	cyclopsLibraryFileName
 finalizeSqlCyclopsData	finalizeSqlCyclopsData
 fitCyclopsModel	fitCyclopsModel
 fitCyclopsSimulation	fitCyclopsSimulation
@@ -40,7 +37,6 @@ getNumberOfTypes	getNumberOfTypes
 getSEs	getSEs
 getUnivariableCorrelation	getUnivariableCorrelation
 getUnivariableSeparability	getUnivariableSeparability
-gradient	gradient
 isInitialized	isInitialized
 listGPUDevices	listGPUDevices
 logLik.cyclopsFit	logLik.cyclopsFit
@@ -55,12 +51,10 @@ print.cyclopsFit	print.cyclopsFit
 printMatrixMarket	printMatrixMarket
 readCyclopsData	readCyclopsData
 reduce	reduce
-residuals.cyclopsFit	residuals.cyclopsFit
 runBootstrap	runBootstrap
 setOpenCLDevice	setOpenCLDevice
 simulateCyclopsData	simulateCyclopsData
 splitTime	splitTime
 summary.cyclopsData	summary.cyclopsData
 survfit.cyclopsFit	survfit.cyclopsFit
-testProportionality	testProportionality
 vcov.cyclopsFit	vcov.cyclopsFit

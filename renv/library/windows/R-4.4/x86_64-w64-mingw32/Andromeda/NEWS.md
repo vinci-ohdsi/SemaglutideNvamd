@@ -1,45 +1,9 @@
-Andromeda 1.1.1
-===============
-
-Bugfixes:
-
-- Disabling DuckDB progress bar to avoid mysterious crashes and hangs.
-
-
-Andromeda 1.1.0
-===============
-
-Changes:
-
-- Leveraging DuckDB for faster assigns and copy operations.
-
-- Added `flushAndromeda()` function.
-
-- Added `andromedaThreads` option to control the maximum number of threads Andromeda is allowed to use.
-
-Bugfixes:
-
-- Calling `flushAndromeda()` before copying entire Andromeda (`copyAndromeda()`) or just a table (`[[]]<-` operator) to avoid segfault.
-
-- Switch from `zip::unzip()` to `utils::unzip()` to avoid 'mtimes' errors.
-
-
-Andromeda 1.0.0
-===============
-
-Changes
-
-- Switch backend from SQLite to DuckDb for greater performance in terms of speed and disk space.
-
-- Added `andromedaMemoryLimit` option to control the maximum amount of memory Andromeda is allowed to use (in GB).
-
-
 Andromeda 0.6.7
 ===============
 
 Bugfixes
 
-- Fix `isAndromedaTable()` when table belongs to descendant of Andromeda.
+- Fix `isAndromedaTable()` when table belongs to descendant of Andromda.
 
 
 Andromeda 0.6.6
