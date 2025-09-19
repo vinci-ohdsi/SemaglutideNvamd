@@ -228,7 +228,7 @@
     },
     "FeatureExtraction": {
       "Package": "FeatureExtraction",
-      "Version": "3.11.0",
+      "Version": "3.7.2",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
@@ -249,7 +249,7 @@
         "readr",
         "rlang"
       ],
-      "Hash": "0773972983241824ef7daf86511a7ca0fdd8e4a2"
+      "Hash": "14766287a762c0af3b266b4085d89c4d"
     },
     "Formula": {
       "Package": "Formula",

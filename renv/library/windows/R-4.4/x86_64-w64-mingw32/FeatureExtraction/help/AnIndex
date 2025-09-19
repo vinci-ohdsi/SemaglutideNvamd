@@ -32,7 +32,6 @@ isAggregatedCovariateData	isAggregatedCovariateData
 isCovariateData	isCovariateData
 isTemporalCovariateData	isTemporalCovariateData
 loadCovariateData	loadCovariateData
-replaceCovariateSettingsCohortSchemaTable	replaceCovariateSettingsCohortSchemaTable
 saveCovariateData	saveCovariateData
 show,CovariateData-method	CovariateData-class
 summary,CovariateData-method	CovariateData-class
