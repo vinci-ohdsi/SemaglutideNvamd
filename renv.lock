@@ -287,10 +287,10 @@
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
+      "RemoteUsername": "vinci-ohdsi",
       "RemoteRepo": "SelfControlledCaseSeries",
       "RemoteRef": "v5.3.1",
-      "RemoteSha": "3bbd4751f5f539464e7996be8323a4b3fb0aa0f2"
+      "remoteSha": "6d5f2bea748ed1fccc2668f4f81511ab55a577f2"
     },
     "ShinyAppBuilder": {
       "Package": "ShinyAppBuilder",
