@@ -1,5 +1,33 @@
+Cyclops v3.6.0
+==============
+
+Changes:
+
+1. resurrect boot-strapping
+2. add JNI interface for manipulating Cyclops objects in an across-language persistent cache
+3. add `cyclopsGetLogLikelihoodGradient()`
+
+Cyclops v3.5.2
+==============
+
+1. fix cyclic dependency with `SelfControlledCaseSeries` in a test-unit
+
+
+Cyclops v3.5.1
+==============
+
+Changes:
+
+1. check for negative curvature before computing CIs
+   a. change to "lange"-convergence when needed
+2. fix `vcov` when model has an offset
+3. fix profiling when in bad initial state
+4. sort output of `predict` for compatibility with `Andromeda:duckbd`
+
 Cyclops v3.5.0
 ==============
+
+Changes:
 
 1. provide optional (`optimalWarmStart = FALSE`) more parallelization when profiling likelihood
 2. make `maxResets` a function parameter

@@ -11,7 +11,7 @@
   "Packages": {
     "Andromeda": {
       "Package": "Andromeda",
-      "Version": "0.6.7",
+      "Version": "1.1.1",
       "Source": "Repository",
       "Repository": "CRAN"
     },
@@ -62,7 +62,7 @@
     },
     "CohortMethod": {
       "Package": "CohortMethod",
-      "Version": "5.4.0",
+      "Version": "5.5.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
@@ -78,7 +78,7 @@
     },
     "Cyclops": {
       "Package": "Cyclops",
-      "Version": "3.5.0",
+      "Version": "3.6.0",
       "Source": "Repository",
       "Repository": "CRAN"
     },
@@ -118,7 +118,7 @@
     },
     "FeatureExtraction": {
       "Package": "FeatureExtraction",
-      "Version": "3.7.2",
+      "Version": "3.11.0",
       "Source": "Repository",
       "Repository": "CRAN"
     },
@@ -273,7 +273,7 @@
     },
     "SelfControlledCaseSeries": {
       "Package": "SelfControlledCaseSeries",
-      "Version": "5.3.1",
+      "Version": "6.1.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",

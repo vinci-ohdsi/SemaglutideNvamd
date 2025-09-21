@@ -102,55 +102,55 @@ analysisDetails <- createAnalysisDetails(
 settings <- createDetailedTemporalCovariateSettings(list(analysisDetails))
 
 ## ----tidy=FALSE,eval=FALSE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  connectionDetails <- createConnectionDetails(
-#    dbms = "postgresql",
-#    server = "localhost/ohdsi",
-#    user = "joe",
-#    password = "supersecret"
-#  )
-#  
-#  cdmDatabaseSchema <- "my_cdm_data"
-#  resultsDatabaseSchema <- "my_results"
+# connectionDetails <- createConnectionDetails(
+#   dbms = "postgresql",
+#   server = "localhost/ohdsi",
+#   user = "joe",
+#   password = "supersecret"
+# )
+# 
+# cdmDatabaseSchema <- "my_cdm_data"
+# resultsDatabaseSchema <- "my_results"
 
 ## ----tidy=FALSE,eval=FALSE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  library(SqlRender)
-#  sql <- readSql("cohortsOfInterest.sql")
-#  sql <- render(sql,
-#    cdmDatabaseSchema = cdmDatabaseSchema,
-#    resultsDatabaseSchema = resultsDatabaseSchema
-#  )
-#  sql <- translate(sql, targetDialect = connectionDetails$dbms)
-#  
-#  connection <- connect(connectionDetails)
-#  executeSql(connection, sql)
+# library(SqlRender)
+# sql <- readSql("cohortsOfInterest.sql")
+# sql <- render(sql,
+#   cdmDatabaseSchema = cdmDatabaseSchema,
+#   resultsDatabaseSchema = resultsDatabaseSchema
+# )
+# sql <- translate(sql, targetDialect = connectionDetails$dbms)
+# 
+# connection <- connect(connectionDetails)
+# executeSql(connection, sql)
 
 ## ----tidy=FALSE,eval=FALSE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  sql <- paste(
-#    "SELECT cohort_definition_id, COUNT(*) AS count",
-#    "FROM @resultsDatabaseSchema.cohorts_of_interest",
-#    "GROUP BY cohort_definition_id"
-#  )
-#  sql <- render(sql, resultsDatabaseSchema = resultsDatabaseSchema)
-#  sql <- translate(sql, targetDialect = connectionDetails$dbms)
-#  
-#  querySql(connection, sql)
+# sql <- paste(
+#   "SELECT cohort_definition_id, COUNT(*) AS count",
+#   "FROM @resultsDatabaseSchema.cohorts_of_interest",
+#   "GROUP BY cohort_definition_id"
+# )
+# sql <- render(sql, resultsDatabaseSchema = resultsDatabaseSchema)
+# sql <- translate(sql, targetDialect = connectionDetails$dbms)
+# 
+# querySql(connection, sql)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 data.frame(cohort_concept_id = c(1124300, 1118084), count = c(240761, 47293))
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateSettings <- createDefaultCovariateSettings()
-#  
-#  covariateData <- getDbCovariateData(
-#    connectionDetails = connectionDetails,
-#    cdmDatabaseSchema = cdmDatabaseSchema,
-#    cohortDatabaseSchema = resultsDatabaseSchema,
-#    cohortTable = "cohorts_of_interest",
-#    cohortIds = c(1118084),
-#    rowIdField = "subject_id",
-#    covariateSettings = covariateSettings
-#  )
-#  summary(covariateData)
+# covariateSettings <- createDefaultCovariateSettings()
+# 
+# covariateData <- getDbCovariateData(
+#   connectionDetails = connectionDetails,
+#   cdmDatabaseSchema = cdmDatabaseSchema,
+#   cohortDatabaseSchema = resultsDatabaseSchema,
+#   cohortTable = "cohorts_of_interest",
+#   cohortIds = c(1118084),
+#   rowIdField = "subject_id",
+#   covariateSettings = covariateSettings
+# )
+# summary(covariateData)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "covariatesPerPerson"))) {
@@ -159,7 +159,7 @@ if (file.exists(file.path(vignetteFolder, "covariatesPerPerson"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateData$covariates
+# covariateData$covariates
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "covariatesPerPerson"))) {
@@ -168,18 +168,18 @@ if (file.exists(file.path(vignetteFolder, "covariatesPerPerson"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  saveCovariateData(covariateData, "covariates")
+# saveCovariateData(covariateData, "covariates")
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  tidyCovariates <- tidyCovariateData(covariateData,
-#    minFraction = 0.001,
-#    normalize = TRUE,
-#    removeRedundancy = TRUE
-#  )
+# tidyCovariates <- tidyCovariateData(covariateData,
+#   minFraction = 0.001,
+#   normalize = TRUE,
+#   removeRedundancy = TRUE
+# )
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  deletedCovariateIds <- attr(tidyCovariates, "metaData")$deletedInfrequentCovariateIds
-#  head(deletedCovariateIds)
+# deletedCovariateIds <- attr(tidyCovariates, "metaData")$deletedInfrequentCovariateIds
+# head(deletedCovariateIds)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "deletedInfrequentCovariateIds.rds"))) {
@@ -188,8 +188,8 @@ if (file.exists(file.path(vignetteFolder, "deletedInfrequentCovariateIds.rds")))
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  deletedCovariateIds <- attr(tidyCovariates, "metaData")$deletedRedundantCovariateIds
-#  head(deletedCovariateIds)
+# deletedCovariateIds <- attr(tidyCovariates, "metaData")$deletedRedundantCovariateIds
+# head(deletedCovariateIds)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "deletedRedundantCovariateIds.rds"))) {
@@ -198,10 +198,10 @@ if (file.exists(file.path(vignetteFolder, "deletedRedundantCovariateIds.rds"))) 
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  library(Andromeda)
-#  covariateData$covariateRef %>%
-#    filter(covariateId %in% deletedCovariateIds, ) %>%
-#    collect()
+# library(Andromeda)
+# covariateData$covariateRef %>%
+#   filter(covariateId %in% deletedCovariateIds, ) %>%
+#   collect()
 
 ## ----echo=FALSE,message=FALSE,warning=FALSE-----------------------------------------------------------------------------------------------------------------------------------------------------------
 library(Andromeda)
@@ -219,21 +219,21 @@ if (file.exists(file.path(vignetteFolder, "deletedRedundantCovariateIds.rds"))) 
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateData2 <- aggregateCovariates(covariateData)
+# covariateData2 <- aggregateCovariates(covariateData)
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateSettings <- createDefaultCovariateSettings()
-#  
-#  covariateData2 <- getDbCovariateData(
-#    connectionDetails = connectionDetails,
-#    cdmDatabaseSchema = cdmDatabaseSchema,
-#    cohortDatabaseSchema = resultsDatabaseSchema,
-#    cohortTable = "cohorts_of_interest",
-#    cohortIds = c(1118084),
-#    covariateSettings = covariateSettings,
-#    aggregated = TRUE
-#  )
-#  summary(covariateData2)
+# covariateSettings <- createDefaultCovariateSettings()
+# 
+# covariateData2 <- getDbCovariateData(
+#   connectionDetails = connectionDetails,
+#   cdmDatabaseSchema = cdmDatabaseSchema,
+#   cohortDatabaseSchema = resultsDatabaseSchema,
+#   cohortTable = "cohorts_of_interest",
+#   cohortIds = c(1118084),
+#   covariateSettings = covariateSettings,
+#   aggregated = TRUE
+# )
+# summary(covariateData2)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
@@ -242,7 +242,7 @@ if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateData2$covariates
+# covariateData2$covariates
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
@@ -250,7 +250,7 @@ if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateData2$covariatesContinuous
+# covariateData2$covariatesContinuous
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
@@ -258,10 +258,10 @@ if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  result <- createTable1(
-#    covariateData1 = covariateData2
-#  )
-#  print(result, row.names = FALSE, right = FALSE)
+# result <- createTable1(
+#   covariateData1 = covariateData2
+# )
+# print(result, row.names = FALSE, right = FALSE)
 
 ## ----comment=NA,echo=FALSE,message=FALSE--------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
@@ -273,18 +273,18 @@ if (file.exists(file.path(vignetteFolder, "aggregatedCovariates"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  covariateSettings <- createTable1CovariateSettings()
-#  
-#  covariateData2b <- getDbCovariateData(
-#    connectionDetails = connectionDetails,
-#    cdmDatabaseSchema = cdmDatabaseSchema,
-#    cohortDatabaseSchema = resultsDatabaseSchema,
-#    cohortTable = "cohorts_of_interest",
-#    cohortIds = c(1118084),
-#    covariateSettings = covariateSettings,
-#    aggregated = TRUE
-#  )
-#  summary(covariateData2b)
+# covariateSettings <- createTable1CovariateSettings()
+# 
+# covariateData2b <- getDbCovariateData(
+#   connectionDetails = connectionDetails,
+#   cdmDatabaseSchema = cdmDatabaseSchema,
+#   cohortDatabaseSchema = resultsDatabaseSchema,
+#   cohortTable = "cohorts_of_interest",
+#   cohortIds = c(1118084),
+#   covariateSettings = covariateSettings,
+#   aggregated = TRUE
+# )
+# summary(covariateData2b)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "table1Covariates"))) {
@@ -293,34 +293,34 @@ if (file.exists(file.path(vignetteFolder, "table1Covariates"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  settings <- createTable1CovariateSettings(
-#    excludedCovariateConceptIds = c(1118084, 1124300),
-#    addDescendantsToExclude = TRUE
-#  )
-#  
-#  covCelecoxib <- getDbCovariateData(
-#    connectionDetails = connectionDetails,
-#    cdmDatabaseSchema = cdmDatabaseSchema,
-#    cohortDatabaseSchema = resultsDatabaseSchema,
-#    cohortTable = "cohorts_of_interest",
-#    cohortIds = c(1118084),
-#    covariateSettings = settings,
-#    aggregated = TRUE
-#  )
-#  
-#  covDiclofenac <- getDbCovariateData(
-#    connectionDetails = connectionDetails,
-#    cdmDatabaseSchema = cdmDatabaseSchema,
-#    cohortDatabaseSchema = resultsDatabaseSchema,
-#    cohortTable = "cohorts_of_interest",
-#    cohortIds = c(1124300),
-#    covariateSettings = settings,
-#    aggregated = TRUE
-#  )
-#  std <- computeStandardizedDifference(covCelecoxib, covDiclofenac)
+# settings <- createTable1CovariateSettings(
+#   excludedCovariateConceptIds = c(1118084, 1124300),
+#   addDescendantsToExclude = TRUE
+# )
+# 
+# covCelecoxib <- getDbCovariateData(
+#   connectionDetails = connectionDetails,
+#   cdmDatabaseSchema = cdmDatabaseSchema,
+#   cohortDatabaseSchema = resultsDatabaseSchema,
+#   cohortTable = "cohorts_of_interest",
+#   cohortIds = c(1118084),
+#   covariateSettings = settings,
+#   aggregated = TRUE
+# )
+# 
+# covDiclofenac <- getDbCovariateData(
+#   connectionDetails = connectionDetails,
+#   cdmDatabaseSchema = cdmDatabaseSchema,
+#   cohortDatabaseSchema = resultsDatabaseSchema,
+#   cohortTable = "cohorts_of_interest",
+#   cohortIds = c(1124300),
+#   covariateSettings = settings,
+#   aggregated = TRUE
+# )
+# std <- computeStandardizedDifference(covCelecoxib, covDiclofenac)
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  head(std)
+# head(std)
 
 ## ----echo=FALSE,message=FALSE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "covDiclofenac"))) {
@@ -337,12 +337,12 @@ if (file.exists(file.path(vignetteFolder, "covDiclofenac"))) {
 }
 
 ## ----eval=FALSE---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#  result <- createTable1(
-#    covariateData1 = covCelecoxib,
-#    covariateData2 = covDiclofenac,
-#    output = "two columns"
-#  )
-#  print(result, row.names = FALSE, right = FALSE)
+# result <- createTable1(
+#   covariateData1 = covCelecoxib,
+#   covariateData2 = covDiclofenac,
+#   output = "two columns"
+# )
+# print(result, row.names = FALSE, right = FALSE)
 
 ## ----comment=NA,echo=FALSE,message=FALSE--------------------------------------------------------------------------------------------------------------------------------------------------------------
 if (file.exists(file.path(vignetteFolder, "covDiclofenac"))) {

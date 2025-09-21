@@ -60,5 +60,9 @@ isCovariateData         Check whether an object is a CovariateData
 isTemporalCovariateData
                         Check whether covariate data is temporal
 loadCovariateData       Load the covariate data from a folder
+replaceCovariateSettingsCohortSchemaTable
+                        Utility function to set the cohort table &
+                        schema on createCohortBasedCovariateSettings
+                        with information from the execution settings
 saveCovariateData       Save the covariate data to folder
 tidyCovariateData       Tidy covariate data

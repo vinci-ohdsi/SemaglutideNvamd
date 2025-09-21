@@ -10,6 +10,7 @@ batchTest	batchTest
 close,Andromeda-method	Andromeda-class
 copyAndromeda	copyAndromeda
 createIndex	createIndex
+flushAndromeda	flushAndromeda
 getAndromedaTempDiskSpace	getAndromedaTempDiskSpace
 groupApply	groupApply
 isAndromeda	isAndromeda

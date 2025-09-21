@@ -24,7 +24,7 @@ RoxygenNote: 7.3.2
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 Author: Martijn Schuemie [aut, cre], Patrick Ryan [aut], Trevor Shaddox [aut], Marc Suchard [aut]
-Built: R 4.4.1; x86_64-w64-mingw32; 2025-09-02 17:44:09 UTC; windows
+Built: R 4.4.1; x86_64-w64-mingw32; 2025-09-21 13:26:28 UTC; windows
 Archs: x64
 RemoteType: github
 RemoteHost: api.github.com
