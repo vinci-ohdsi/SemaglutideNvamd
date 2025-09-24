@@ -167,3 +167,12 @@ Strategus::execute(
   executionSettings = executionSettings,
   connectionDetails = connectionDetails
 )
+
+
+## zip up all results 
+zipFile <- file.path(outputLocation, paste0(databaseName, ".zip"))
+ 
+Strategus::zipResults(
+  resultsFolder = outputLocation,
+  zipFile = zipFile
+)
