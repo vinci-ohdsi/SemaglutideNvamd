@@ -14,14 +14,12 @@
 library(ShinyAppBuilder)
 library(OhdsiShinyModules)
 
-resultsDatabaseSchema <- "results"
+resultsDatabaseSchema <- "ord_researchername_xyz.sema.results"
 
 # Specify the connection to the results database
 resultsConnectionDetails <- DatabaseConnector::createConnectionDetails(
-  dbms = "postgresql",
-  server = Sys.getenv("OHDSI_RESULTS_DATABASE_SERVER"),
-  user = Sys.getenv("OHDSI_RESULTS_DATABASE_USER"),
-  password = Sys.getenv("OHDSI_RESULTS_DATABASE_PASSWORD")
+  dbms = "sql server",
+  server = "va server name here")
 )
 
 # ADD OR REMOVE MODULES TAILORED TO YOUR STUDY

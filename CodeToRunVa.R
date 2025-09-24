@@ -8,7 +8,7 @@ Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="extras") # "d:/JDBC/installed_12.4"
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = "sql server",
-  server = "vhacdwdwhdbs102"
+  server = "SERVER NAME HERE"
 )
 
 # Only needs to be executed once
@@ -24,6 +24,58 @@ cdmDatabaseSchema <- "ORD_Researcher_xyz.OMOPV5" # CDW_OMOP
 outputLocation <- "D:/OHDSI/MAS/output"
 minCellCount <- 10
 cohortTableName <- "sema_nvamd"
+
+assignInNamespace(
+  "checkTimeStabilityAssumption",
+  function(studyPopulation, sccsModel = NULL, maxRatio = 1.10, alpha = 0.05) {
+    errorMessages <- checkmate::makeAssertCollection()
+    checkmate::assertList(studyPopulation, min.len = 1, add = errorMessages)
+    checkmate::assertClass(sccsModel, "SccsModel", null.ok = TRUE, add = errorMessages)
+    checkmate::assertNumeric(maxRatio, lower = 1, len = 1, add = errorMessages)
+    checkmate::assertNumber(alpha, lower = 0, upper = 1, add = errorMessages)
+    checkmate::reportAssertions(collection = errorMessages)
+    
+    data <- SelfControlledCaseSeries:::computeOutcomeRatePerMonth(studyPopulation, sccsModel)
+    if (nrow(data) < 2) {
+      result <- dplyr::tibble(ratio = NA,
+                       p = 1,
+                       pass = TRUE)
+      return(result)
+    }
+    o <- data$observedCount
+    e <- data$adjustedExpectedCount
+    e[e == 0] <- .Machine$double.eps
+    
+    logLikelihood <- function(x) {
+      return(-sum(pmax(-999, log(dpois(o, e*x) + dpois(o, e/x))))) # EXPEDIENT HACK
+    }
+    x <- seq(1, 10, by = 0.1)
+    ll <- sapply(x, logLikelihood)
+    maxX <- x[max(which(!is.na(ll) & !is.infinite(ll)))]
+    minX <- x[min(which(!is.na(ll) & !is.infinite(ll)))]
+    xHat <- optim(1.5, logLikelihood, lower = minX, upper = maxX, method = "L-BFGS-B")$par
+    x0 <- if (xHat > maxRatio) maxRatio else xHat
+    x1 <- if (xHat < maxRatio) maxRatio else xHat
+    ll0 <- -logLikelihood(x0)
+    ll1 <- -logLikelihood(x1)
+    llr <- 2 * (ll1 - ll0)
+    if (is.nan(llr)) {
+      if (xHat > maxRatio) {
+        p <- 0
+      } else {
+        p <- 1
+      }
+    } else {
+      p <- pchisq(llr, 1, lower.tail = FALSE)
+    }
+    result <- dplyr::tibble(ratio = xHat,
+                     p = p,
+                     pass = p > alpha)
+    return(result)
+  },
+  ns = "SelfControlledCaseSeries")
+
+
 
 ##=========== END OF INPUTS ==========
 analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
@@ -114,4 +166,13 @@ Strategus::execute(
   analysisSpecifications = analysisSpecifications,
   executionSettings = executionSettings,
   connectionDetails = connectionDetails
+)
+
+
+## zip up all results 
+zipFile <- file.path(outputLocation, paste0(databaseName, ".zip"))
+ 
+Strategus::zipResults(
+  resultsFolder = outputLocation,
+  zipFile = zipFile
 )
